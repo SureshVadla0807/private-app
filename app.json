@@ -23,6 +23,11 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.spendings.app"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "fb205504-335e-4a56-97e3-36346f8b30ee"
+      }
     }
   }
 }
