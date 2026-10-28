@@ -23,7 +23,7 @@ jobs:
           node-version: 20
           cache: 'npm'
 
-      - name: Install Node Dependencies
+      - name: Install Dependencies
         run: npm install --legacy-peer-deps
 
       - name: Set up Java JDK 17
@@ -31,9 +31,11 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
+          cache: 'gradle'
 
-      - name: Setup Android SDK
-        uses: android-actions/setup-android@v3
+      - name: Accept Android SDK Licenses
+        run: |
+          yes | $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --licenses || true
 
       - name: Make Gradlew Executable
         run: chmod +x android/gradlew
