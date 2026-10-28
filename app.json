@@ -1,0 +1,28 @@
+{
+  "expo": {
+    "name": "Spendings",
+    "slug": "spendings",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#0F172A"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0F172A"
+      },
+      "permissions": [
+        "android.permission.RECEIVE_SMS",
+        "android.permission.READ_SMS",
+        "android.permission.BIND_NOTIFICATION_LISTENER_SERVICE"
+      ],
+      "package": "com.spendings.app"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.spendings.app"
+    }
+  }
+}
